@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios - Juan David </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="scripts/state.js"></script>
+    <script type="module" src="scripts/service.js"></script>
+    <script type="module" src="scripts/ui.js"></script>
+    <script type="module" src="scripts/persistence.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Lista de Usuarios</h1>
+
+        <label>Usuarios por página:</label>
+        <select id="limit">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="20">20</option>
+        </select>
+        
+<p id="loading" style="display:none;">Cargando...</p>
+
+        <p id="info"></p>
+
+        <div id="resultado"></div>
+
+        <div class="botones">
+            <button id="btnPrev">Anterior</button>
+            <button id="btnNext">Siguiente</button>
+            <div id="paginacion"></div>
+        </div>
+             <div>
+    <button id="menos2">-2</button>
+    <button id="mas2">+2</button>
+    <button id="menos5">-5</button>
+    <button id="mas5">+5</button>
+       </div>
+    </div>
+</body>
+</html>
